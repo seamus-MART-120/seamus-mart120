@@ -1,0 +1,37 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+
+.blueColor {
+    color: blue;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+span {
+    color: white;
+    background-color: red;
+}
+
+#specificColor {
+    color: blue;
+    font-family: Verdana;
+    font-size: 24px;
+}
+
+#specificLink {
+    color: red;
+    font-family: Arial;
+    font-size: 28px;
+}
+
+a {
+    color: blue;
+}
+
+.story-page {
+    background-color: pink;
+    background-image: url("story-background.svg");
+    background-repeat: repeat;
+}

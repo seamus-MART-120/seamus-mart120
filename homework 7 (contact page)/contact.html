@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <script>
+        function checkit() {
+            if (document.getElementById("username").value == "") {
+                document.getElementById("username").style.backgroundColor = "red";
+                document.getElementById("usernameRequired").innerHTML = "required";
+            } else {
+                document.getElementById("username").style.backgroundColor = "";
+                document.getElementById("usernameRequired").innerHTML = "";
+            }
+
+            if (document.getElementById("useremail").value == "") {
+                document.getElementById("useremail").style.backgroundColor = "red";
+                document.getElementById("useremailRequired").innerHTML = "required";
+            } else {
+                document.getElementById("useremail").style.backgroundColor = "";
+                document.getElementById("useremailRequired").innerHTML = "";
+            }
+
+            if (!document.getElementById("terms").checked) {
+                document.getElementById("termsLabel").style.color = "red";
+                document.getElementById("termsRequired").innerHTML = "required";
+            } else {
+                document.getElementById("termsLabel").style.color = "";
+                document.getElementById("termsRequired").innerHTML = "";
+            }
+        }
+    </script>
+    <h1>Contact Us</h1>
+    <form>
+        <p>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameRequired"></span>
+        </p>
+        <p>
+            <label for="useremail">Email Address:</label>
+            <input type="text" id="useremail" name="useremail" required>
+            <span id="useremailRequired"></span>
+        </p>
+        <p>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" id="termsLabel">I accept the terms of agreement</label>
+            <span id="termsRequired"></span>
+        </p>
+        <button type="button" onclick="checkit()">you are done!</button>
+    </form>
+    <nav>
+        <a href="index.html">Back to Home</a> |
+        <a href="about.html">Go to the story page</a>
+    </nav>
+</body>
+</html>
