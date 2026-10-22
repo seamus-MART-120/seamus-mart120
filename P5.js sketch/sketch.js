@@ -1,0 +1,181 @@
+function setup() {
+  createCanvas(480, 560);
+  noLoop();
+}
+
+function draw() {
+  background(239, 243, 245);
+
+  noStroke();
+  fill(45, 69, 82);
+  textAlign(CENTER, CENTER);
+  textStyle(BOLD);
+  textSize(12);
+  text("HI, I'M ME!", 240, 45);
+  fill(123, 148, 157);
+  rect(215, 60, 50, 2, 1);
+
+  noStroke();
+  fill(211, 155, 119);
+  rect(211, 306, 58, 77, 18);
+  fill(194, 135, 103);
+  arc(240, 326, 58, 48, 0, PI);
+
+  fill(112, 151, 163);
+  beginShape();
+  vertex(194, 356);
+  bezierVertex(173, 360, 156, 369, 144, 382);
+  vertex(122, 410);
+  vertex(145, 430);
+  vertex(165, 414);
+  vertex(165, 497);
+  vertex(315, 497);
+  vertex(315, 414);
+  vertex(335, 430);
+  vertex(358, 410);
+  vertex(336, 382);
+  bezierVertex(324, 369, 307, 360, 286, 356);
+  bezierVertex(271, 372, 256, 380, 240, 380);
+  bezierVertex(224, 380, 209, 372, 194, 356);
+  endShape(CLOSE);
+  noFill();
+  stroke(79, 120, 132);
+  strokeWeight(3);
+  arc(240, 358, 84, 44, 0, PI);
+  stroke(145, 178, 185);
+  strokeWeight(1.5);
+  line(101, 420, 115, 434);
+  line(379, 420, 365, 434);
+
+  push();
+  translate(240, 218);
+  scale(1.25, 1.2);
+  translate(-240, -218);
+
+
+  noStroke();
+  fill(177, 132, 65);
+  beginShape();
+  vertex(157, 212);
+  bezierVertex(145, 130, 176, 95, 237, 92);
+  bezierVertex(307, 87, 340, 134, 323, 226);
+  vertex(315, 294);
+  vertex(291, 322);
+  vertex(177, 316);
+  vertex(157, 277);
+  endShape(CLOSE);
+  fill(211, 174, 101);
+  beginShape();
+  vertex(166, 198);
+  bezierVertex(154, 128, 188, 101, 239, 101);
+  bezierVertex(293, 99, 324, 137, 315, 204);
+  vertex(305, 286);
+  vertex(287, 307);
+  vertex(187, 306);
+  vertex(169, 270);
+  endShape(CLOSE);
+
+  fill(198, 137, 103);
+  ellipse(161, 230, 30, 47);
+  ellipse(319, 230, 30, 47);
+  fill(235, 190, 151);
+  ellipse(163, 231, 17, 30);
+  ellipse(317, 231, 17, 30);
+  fill(230, 181, 143);
+  beginShape();
+  vertex(169, 177);
+  bezierVertex(174, 139, 197, 122, 240, 122);
+  bezierVertex(284, 122, 306, 144, 311, 181);
+  vertex(305, 267);
+  bezierVertex(299, 306, 271, 328, 240, 330);
+  bezierVertex(207, 328, 181, 306, 175, 267);
+  endShape(CLOSE);
+  fill(238, 195, 158, 95);
+  ellipse(200, 263, 36, 19);
+  ellipse(280, 263, 36, 19);
+
+  noFill();
+  stroke(112, 81, 48);
+  strokeWeight(5);
+  strokeCap(ROUND);
+  bezier(190, 202, 200, 195, 214, 195, 222, 201);
+  bezier(258, 201, 268, 195, 282, 195, 291, 202);
+
+  stroke(81, 64, 52);
+  strokeWeight(2);
+  fill(250, 247, 238);
+  ellipse(207, 220, 42, 25);
+  ellipse(273, 220, 42, 25);
+  noStroke();
+  fill(133, 112, 61);
+  ellipse(208, 220, 17, 21);
+  ellipse(272, 220, 17, 21);
+  fill(50, 48, 39);
+  ellipse(208, 220, 8, 13);
+  ellipse(272, 220, 8, 13);
+  fill(255);
+  circle(211, 216, 5);
+  circle(275, 216, 5);
+  noFill();
+  stroke(121, 80, 65);
+  strokeWeight(1.5);
+  arc(207, 220, 42, 25, PI, TWO_PI);
+  arc(273, 220, 42, 25, PI, TWO_PI);
+
+  stroke(187, 132, 105);
+  strokeWeight(2);
+  noFill();
+  bezier(240, 220, 237, 239, 231, 253, 238, 257);
+  bezier(238, 257, 242, 260, 249, 258, 251, 255);
+  noStroke();
+  fill(246, 144, 145, 105);
+  ellipse(197, 264, 34, 18);
+  ellipse(283, 264, 34, 18);
+  fill(147, 77, 81);
+  beginShape();
+  vertex(222, 278);
+  bezierVertex(231, 286, 249, 286, 258, 278);
+  bezierVertex(252, 298, 228, 298, 222, 278);
+  endShape(CLOSE);
+  fill(255, 222, 218);
+  arc(240, 286, 19, 8, 0, PI);
+
+  fill(192, 151, 77);
+  beginShape();
+  vertex(159, 212);
+  bezierVertex(149, 157, 165, 111, 207, 102);
+  bezierVertex(248, 85, 302, 106, 321, 147);
+  vertex(307, 181);
+  vertex(294, 165);
+  vertex(282, 187);
+  vertex(266, 164);
+  vertex(249, 190);
+  vertex(234, 164);
+  vertex(215, 188);
+  vertex(201, 164);
+  vertex(183, 187);
+  vertex(170, 170);
+  endShape(CLOSE);
+  fill(222, 185, 112);
+  beginShape();
+  vertex(166, 174);
+  bezierVertex(169, 126, 198, 105, 237, 104);
+  bezierVertex(277, 102, 306, 123, 315, 161);
+  vertex(304, 176);
+  vertex(290, 159);
+  vertex(277, 179);
+  vertex(262, 154);
+  vertex(246, 181);
+  vertex(229, 155);
+  vertex(212, 179);
+  vertex(198, 157);
+  vertex(181, 178);
+  endShape(CLOSE);
+  stroke(164, 122, 57);
+  strokeWeight(2);
+  noFill();
+  bezier(187, 132, 195, 118, 207, 112, 217, 111);
+  bezier(269, 112, 286, 116, 297, 129, 302, 140);
+
+  pop();
+}
