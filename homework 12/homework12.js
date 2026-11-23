@@ -40,8 +40,16 @@ function draw() {
     stroke(0);
 
     // draw and move the enemy circles
-    fill(120);
     for (var i = 0; i < shapeXs.length; i++) {
+        if (diameters[i] < 20) {
+            fill(50);
+        }
+        if (diameters[i] >= 20 && diameters[i] < 30) {
+            fill(120);
+        }
+        if (diameters[i] >= 30) {
+            fill(190);
+        }
         circle(shapeXs[i], shapeYs[i], diameters[i]);
 
         shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
